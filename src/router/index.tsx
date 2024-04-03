@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate} from 'react-router-dom'
 // BrowserRouter history ;HashRouter hash
 
 import App from '@/App'
@@ -10,6 +10,7 @@ const baseRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route path='/' element={<Navigate to='/home' />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Route>
