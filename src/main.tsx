@@ -4,10 +4,10 @@ import ReactDOM from 'react-dom/client'
 import 'reset-css'
 // 框架样式
 import '@/assets/style/global.scss'
-import App from './App.tsx'
+import Router from './router'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <Router />
+  </React.StrictMode>
+);
