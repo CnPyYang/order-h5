@@ -34,6 +34,10 @@ const routes = [
     path: "/about",
     element: getLoading(<About />),
   },
+  {
+    path: "*",
+    element: <Navigate to="/page1" />,
+  },
 ];
 
 export default routes
